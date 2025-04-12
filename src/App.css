@@ -1,38 +1,140 @@
-.App {
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.HomePage {
+  
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.HomeContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+}
+.search {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.search input {
+  padding: 10px 23px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  background-color: rgb(229, 243, 243);
+  text-transform: capitalize;
+}
+.search input::placeholder {
+  font-size: 24px;
+}
+.search button {
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  font-weight: 500;
+}
+.search button svg {
+  transform: translateY(-5%);
+}
+
+.PriceContent {
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(
+    135deg,
+    rgb(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 1)
+  );
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow-x: hidden;
+}
+.Plan_heading{
+    background-image: linear-gradient(
+    135deg,
+    rgb(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 1)
+  );
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-left: 20px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.PriceCard {
+  border-radius: 20px;
+  justify-self: center;
+  align-self: center;
+  transition: all 0.2s ease;
+  background-image: linear-gradient(
+    135deg,
+    rgb(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 9)
+  );
+  color: rgb(107, 111, 114);
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+}
+.PriceCard:hover {
+  transform: translateY(-20px);
+  animation: glow 3s linear infinite;
+  background: linear-gradient(
+    135deg,
+    rgb(39, 1, 39, 0.9),
+    rgb(39, 1, 39),
+    rgb(39, 1, 39),
+    rgb(39, 1, 39, 0.9),
+    rgb(39, 1, 39)
+  );
+  background-size: 400% 400%;
+  background-position: 0 0;
+}
+@keyframes glow{
+    0%{background-position: 0 0;}
+    50%{background-position: 0% 200%;}
+    100%{background-position: 0% 0;}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Plan {
+  font-family: "Roboto", sans-serif;
+
+  border: 3px solid rgb(255, 255, 255);
+  width: 100%;
+  height: 90%;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 12px 24px;
+}
+
+.Footer{
+    width: 100vw;
+    height: 80vh;
+    background-color: #0f0f0f;
+    display: grid;
+    grid-template-rows: 50px  0.5fr 4fr;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+
+}
+.Footer_Content{
+    justify-self:stretch;
+}
+.Below_Call{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,50px);
+}
+.call_below_text{
+    color: azure;
 }

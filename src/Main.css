@@ -1,0 +1,201 @@
+.Navigation-main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0 20px;
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    transition: all 0.3s ease-in-out;
+
+}
+.down{
+    background-color: rgba(0, 0, 0, 0.689);
+}
+.fancy-main{
+    display: flex;
+    align-content: start;
+    color: red;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.Link{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-evenly;
+    color: #f0ffff;
+}
+.Navigation-main input{
+    justify-self: center;
+    align-self: center;
+    padding: 2px 30px;
+    font-size: 24px;
+    border-radius: 20px;
+    border: none;
+    border: 2px solid #f0ffff57;
+    color:#f0ffffd0;
+    background-color: rgba(255, 255, 255, 0.141);
+    outline: none;
+    backdrop-filter: blur(10px);
+}
+.Navigation-main input::placeholder{
+    color: #f0ffffd0;
+    outline: none;
+}
+.MostWatched{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    
+}
+.TiteCard{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    height: 80vh;
+    width: 40vw;
+    position: absolute;
+    top:20%;
+    left:1%;
+    padding: 0px 40px;
+}
+.Title{
+    background-image: url("../public/images/JohnWick-title.png");
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+   
+}
+.Description{
+    display: grid;
+    grid-template-rows: 1fr 3fr 3fr;
+}
+.about{
+    display: flex;
+    align-items: center;
+    color:#f0ffff97;
+    gap:10px;
+    justify-content: center;
+}
+.about button{
+    background-color: red;
+    color: #f0ffffd0;
+    font-weight: 500;
+    outline: none;
+    border: none;
+   transform: translateY(-1px);
+    padding: 0px 3px 2px 5px;
+}
+.button-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: start;
+    justify-items: center;
+}
+.Button-Main{
+    display: flex;
+    gap: 10px;
+    padding: 5px 15px 0 12px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+.icon-main{
+    transform: translateY(-3px);
+    font-size: 24px;
+}
+.Movies{
+    width: 100vw;
+    height: fit-content;
+    background-color: #141414;
+    overflow: hidden;
+}
+.sort{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+}
+.sort h3{
+    color: #f0ffff;
+    padding:20px 0;
+}
+.custom-dropdown{
+    border: 2px solid rgba(255, 255, 255, 0.666);
+    color: #f0ffff;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius:10px ;
+    outline: none;
+    cursor: pointer;
+}
+.custom-dropdown option {
+    background-color: #1a1a1a;  /* Background of dropdown items */
+    color: white;  
+    outline: none;      
+    border: 2px solid red;       /* Color of dropdown items */
+  }
+
+  .MovieCard{
+    display: flex;
+    
+    flex-direction: column;
+    height: 250px;
+    gap: 20px;
+    padding-left: 20px;
+    overflow:scroll;
+   
+  }
+  .MovieCard h3{
+    color: #f0ffff;
+    padding: 0 20px;
+  }
+
+  .MovieCardContainer{
+    display: flex;
+    /* width: 300%; */
+    padding-top: 40px;
+    height: 100%;
+    gap:20px;
+    overflow-x: scroll;
+    transition: all 1s ease-in-out;
+  }
+  
+  .Card-Main{
+    width:250px;
+    height: 80%;
+    flex-shrink: 0;
+background-position: center;
+background-size: cover;
+overflow-x: auto; 
+display: flex;
+align-items: end;
+padding:  0 10px ;
+color: rgb(255, 255, 255);
+border-radius: 10px;
+filter: brightness(90%);
+z-index: 1;
+  }
+
+
+  .Card-Main:hover{
+    transform: scale(1.2);
+    margin: 0 30px;
+    transition: all 0.5s  ease-in-out;
+    border:4px solid white;
+    filter: brightness(100%);
+  }
+.Card-Main h5{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.69),rgba(0, 0, 0, 0.652));
+    padding: 0px 10px 5px 10px;
+    border-radius:0px ;
+  }
+  

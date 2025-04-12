@@ -1,0 +1,82 @@
+.SignIn_Page{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.signInBox{
+    
+    padding: 50px;
+    background: linear-gradient(45deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6),rgba(0,0,0,0.6),rgb(0, 0, 0,0.6),rgba(0,0,0,0.2));
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    background-size: 400% 400%;
+    width: 400px;
+    
+}
+.signInBox:hover{
+    animation: glow 4s linear infinite;
+   
+    cursor: pointer;
+}
+@keyframes glow {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 200% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+.fancy{
+    display: flex;
+    align-content: start;
+    color: red;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Bebas Neue', sans-serif;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+}
+.div1{
+    display: grid;
+    grid-template-rows: repeat(5,48px) repeat(2,32px);
+    color:white;
+    gap: 20px;
+}
+.div1 input{
+    background-color: #131210;
+    border: 1px solid rgba(240, 255, 255, 0.608);
+    color: aliceblue;
+    padding: 0 20px;
+    
+}
+.div1 input::placeholder{
+    padding: 0;
+}
+.div2{
+    display: grid;
+    grid-template-rows: repeat(4,30px);
+    gap: 12px;
+    color:#f0ffff
+}
+.div2 form{
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+.div2 p,.alone {
+    color: #f0ffffb6;
+}
+.learnmore{
+    text-decoration: underline;
+    cursor: pointer;
+}

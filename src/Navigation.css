@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    cursor:  context-menu;
+    scrollbar-width: none
+}
+.Navigation{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 2px 15px;
+    position: fixed;
+    width: 100vw;
+    align-items: center;
+    transition: all 0.2s ease;
+    
+}
+.scrolled {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 2px 15px;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+}
+.NavEnd{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: baseline;
+}
+
+.fancy-heading{
+    display: flex;
+    align-content: start;
+    color: red;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+.ButtonDiv *{
+    transform: translateY(2px);
+}
